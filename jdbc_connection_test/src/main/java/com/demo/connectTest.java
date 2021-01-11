@@ -47,7 +47,11 @@ public class connectTest {
 			System.out.println(e);
 		}finally {
 			try {
+				connection.close();
+				System.out.println("Connection Closed");
 				
+			}catch (SQLException e) {
+				System.out.println(e);
 			}
 		}
 
